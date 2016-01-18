@@ -7,6 +7,13 @@ namespace dotNetExceptionLab.v45
     {
         static void Main(string[] args)
         {
+            PerformTests();
+
+            Console.ReadKey();
+        }
+
+        private static void PerformTests()
+        {
             try
             {
                 WithEx();
@@ -36,8 +43,6 @@ namespace dotNetExceptionLab.v45
                 Console.WriteLine(ex);
                 Console.WriteLine();
             }
-
-            Console.ReadKey();
         }
 
         private static void WithEx()
